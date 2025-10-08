@@ -29,7 +29,7 @@ function listAvailableBooks() {
 
 // Borrow book
 function borrowBook(title) {
-    const book = null;
+    let book = null;
     for (let i = 0; i < books.length; i++){
         if (books[i].title.toLowerCase() === title.toLowerCase()) {
             book = books[i];
@@ -48,7 +48,7 @@ function borrowBook(title) {
 
 // Return book
 function returnBook(title) {
-    const book = null;
+    let book = null;
     for (let i = 0; i < books.length; i++){
         if (books[i].title.toLowerCase() === title.toLowerCase()) {
             book = books[i];
@@ -67,7 +67,7 @@ function returnBook(title) {
 function listBooksByAuthor(author) {
     const authorBooks = [];
     for (let i = 0; i < books.length; i++){
-        if (books[i].author.toLowerCase() === sssssssauthor.toLowerCase()) {
+        if (books[i].author.toLowerCase() === author.toLowerCase()) {
             authorBooks.push(books[i]);
         }
     }
@@ -101,7 +101,7 @@ function findBooksBefore(year) {
 
 // Remove book
 function removeBook(title) {
-    const index = -1;
+    let index = -1;
     for (let i = 0; i < books.length; i++){
         if (books[i].title.toLowerCase() === title.toLowerCase()) {
             index = i;
