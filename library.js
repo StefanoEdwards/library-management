@@ -67,7 +67,7 @@ function returnBook(title) {
 function listBooksByAuthor(author) {
     const authorBooks = [];
     for (let i = 0; i < books.length; i++){
-        if (books[i].author.toLowerCase() === author.toLowerCase()) {
+        if (books[i].author.toLowerCase() === sssssssauthor.toLowerCase()) {
             authorBooks.push(books[i]);
         }
     }
