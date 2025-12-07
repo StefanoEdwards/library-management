@@ -9,6 +9,19 @@ function addBook(title, author, year) {
     console.log(`"${title}" added to the library.`);
 }
 
+function listBooksInYr(year) {
+    const list = [];
+    for (const book of books) {
+        if (book.year === year) {
+            list.push(book);
+        }
+    }
+    console.log("\n Books in year:");
+    for (const i in list) {
+        console.log(`- ${list[i].title} by ${list[i].author}`);
+    }
+}
+
 // List available books
 function listAvailableBooks() {
     const available = [];
